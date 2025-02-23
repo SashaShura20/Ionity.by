@@ -1,0 +1,27 @@
+{% extends 'base.html'%}
+
+
+{% block title%}
+    Login
+{% endblock %}
+
+
+{% block body%}
+<body>
+
+    <div id="body_akk">
+
+            <form method="post" id="input-login">
+               <form class="input">
+                  Логин<br>
+                  <input type="text" name="name" placeholder="Логин, e-mail, телефон"><br><br>
+                  Пароль<br>
+                  <input type="text" name="password">
+                  <button type="submit" id="btn-login" class="btn-login"> Войти</button><br>
+               </form>
+            </form>
+
+    </div>
+
+</body>
+{% endblock %}

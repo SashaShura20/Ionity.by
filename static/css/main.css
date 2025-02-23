@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../img/fonhome.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+#body_akk{
+    background: #19b1db;
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    border-radius: 0% 15% 15% 0%;
+    opacity: 0.6;
+    margin: 150px auto; /*Внешний отступ*/
+    padding: 30px; /*Внутренний отступ*/
+}
+
+#body_akk_reg{
+    background: #19b1db;
+    height: 680px;
+    width: 680px;
+    text-align: center;
+    border-radius: 0% 15% 15% 0%;
+    opacity: 0.6;
+    margin: 180px auto; /*Внешний отступ*/
+    padding: 10px; /*Внутренний отступ*/
+    position: center;
+}
+
+.header a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.container{
+    margin-top: 45px;
+}
+
+
+
+
+                                                   /*____Header____*/
+
+.header{
+    top: 0;
+    position: fixed;
+    z-index: 10000;
+    width: 100vw;
+    height: 80px;
+    background-color: #000000;
+    display: inline;
+    padding: 20px;
+}
+
+.header hr{
+    color: #ffffff;
+    height: 10px;
+	border: none;
+	border-top: 3px solid #ffffff;
+}
+
+.header a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.header-navigation, .header-autorization{
+    display: inline;
+    position: absolute;
+}
+
+.header-autorization{
+    right: 20px;
+}
+
+
+.li-navigation, .li-autorization{
+    display: inline;
+    margin-right: 18px;
+    color: #ffffff;
+}
+
+.img-emblem{
+    width: 200px;
+    margin-left: 500px;
+    margin-right: auto;
+}
+
+
+
+
+                                                   /*____BTN register/login_____*/
+
+
+
+
+.btn-login{
+    width: 95px;
+    height: 40px;
+    font-size: 25px;
+    margin: 70px;
+    border: 2px solid #000000;
+}
+
+
+#sing-in{
+    width: 320px;
+    height: 55px;
+    margin: 5% auto auto auto;
+    display: block;
+}
+
+#input-login{
+    font-size: 37px;
+    margin: 15px;
+}
+
+
+
+                                                   /*_____Home page____*/
+
+
+
+::placeholder{
+    font-size: 29px;
+}
+
+.img-home-body{
+    width: 500px;
+    margin-right: auto;
+    box-shadow:5px 5px 14px 7px #78799f;
+    margin: 45px;
+}
+
+.text{
+    text-align: left;
+}
+
+
+
+
+                                                 /*_____Stocks_____*/
+
+
+
+
+.btn-post{
+    border-radius: 25px;
+    width: 600px;
+}
+
+
+/* Основные стили для модального окна */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Остается на месте при прокрутке */
+    z-index: 1; /* Поверх других элементов */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Прокрутка, если контент не помещается */
+    background-color: rgba(0, 0, 0, 0.5); /* Затемнение фона */
+}
+
+/* Стили для содержимого модального окна */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Отступ сверху и центрирование */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ширина содержимого */
+    max-width: 500px; /* Максимальная ширина */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Тень */
+}
+
+/* Стили для кнопки закрытия */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
+
+
+
+                                                  /*_________About________*/
+
+
+
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+p {
+    font-size: 26px;
+}
+
+/* Заголовок и слоган */
+.about-header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #140a21;
+    opacity: 0.8;
+}
+
+.slogan {
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+/* Блок "Наша миссия" */
+.mission {
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.mission-text, .h-mission{
+    flex: 1;
+    padding-right: 20px;
+    color: #ffffff;
+}
+
+.mission-image img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* Блок "Почему выбирают нас?" */
+.advantages {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #140a21;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.advantages-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.advantage {
+    flex: 1;
+    max-width: 300px;
+    margin: 20px;
+}
+
+.advantage img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* Блок "Наши планы" */
+.plans {
+    padding: 50px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.plans img {
+    width: 300px;
+    margin: 20px;
+}
+
+/* Призыв к действию */
+.cta {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #140a21;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+}
+
+
+
+                                                  /*_____Footer_____*/
+
+
+

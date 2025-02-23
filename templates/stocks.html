@@ -1,0 +1,30 @@
+{% extends 'base.html'%}
+
+{% block title%}
+    Stocks
+{% endblock %}
+
+
+{% block body%}
+<br>
+
+
+<div class="container" id="openModalBtn">
+    <div class="div-post-stocks">
+        <img src="static/img/akciya.jpg" type="button" class="btn-post" id="btn-post">
+    </div>
+</div>
+
+
+
+<!-- Модальное окно -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span id="closeModalBtn" class="close">&times;</span>
+        <p>Привет! Это всплывающее окно.</p>
+    </div>
+</div>
+
+
+
+{% endblock %}
